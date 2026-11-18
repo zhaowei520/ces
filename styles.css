@@ -280,6 +280,11 @@ img {
   box-shadow: 0 2px 6px rgba(255, 90, 54, 0.45);
 }
 
+/* 元素上的 hidden 属性需要覆盖 .cart-badge 的 display: grid，否则空车时会残留一个“0” */
+.cart-badge[hidden] {
+  display: none;
+}
+
 /* ---------- 4 Hero ---------- */
 .hero {
   max-width: var(--max-width);
